@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lyre-tui"
+version = "0.1.0"
+description = "A terminal home for agentic conversations"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Owen Frausto" }]
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/owenfrausto/lyre"
+Repository = "https://github.com/owenfrausto/lyre"
+Issues = "https://github.com/owenfrausto/lyre/issues"
+
+[project.scripts]
+lyre = "lyre.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lyre"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
