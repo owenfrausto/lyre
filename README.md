@@ -5,6 +5,8 @@ Code and Codex sessions, groups them by the directory or worktree where they
 began, previews their metadata, and resumes them in place. Claude conversations
 use `🦀`; Codex conversations use `🤖`.
 
+![Lyre showing conversations grouped by project directory, with a details pane, a recent-conversations table, and a first-prompt preview](https://raw.githubusercontent.com/owenfrausto/lyre/main/docs/screenshot.png)
+
 ## Run it
 
 Python 3.11+ is required. Install the Claude Code and/or Codex CLI for the
